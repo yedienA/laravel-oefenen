@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Car;
 use Illuminate\Http\Request;
 
-class CarController extends Controller
+class CarsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class CarController extends Controller
     {
         $Cars=Car::all();
 
-        return view('admin.cars.index',['Cars' -> $Cars]);
+        return view('admin.cars.index',['Cars' => $Cars]);
     }
 
     /**
@@ -23,7 +23,7 @@ class CarController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.cars.create');
     }
 
     /**
