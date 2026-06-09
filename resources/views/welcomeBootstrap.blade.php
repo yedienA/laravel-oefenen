@@ -1,4 +1,3 @@
-<?php
 @extends('layouts.app')
 
 @section('content')
@@ -6,3 +5,4 @@
         <h1>Welcome</h1>
     </div>
 @endsection
+php artisan help make:controller
